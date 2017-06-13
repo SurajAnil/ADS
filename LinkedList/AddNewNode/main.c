@@ -70,7 +70,16 @@ void node_push_back(struct Node** head, int data)
 	struct Node* curr_node = *head;
 
 	new_node -> data = data;
+	
+	new_node -> next = NULL;
 
+	/* if the given node is empty, then make the new_node as head
+	 */
+	if(*head == NULL)
+	{
+		*head = new_node;
+		return;
+	}
 	/* iterate till you reach the last node
 	 */ 
 	while(curr_node -> next != NULL)
@@ -88,6 +97,7 @@ void printList(struct Node* head)
 		printf("%d -> ", head -> data);
 		head = head -> next;
 	}
+	printf("NULL\n");
 }
 
 // driver function
