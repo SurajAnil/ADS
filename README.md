@@ -8,6 +8,7 @@ Algrithms:
 ----------
 
 An algorithm is a process which given an instance of a specific problem, produces a solution and exhibit the following characteristics:
+	
 	a. Should be clear to implement.
 	b. Always produces a correct output.
 	c. Takes a finite amount of time to arrive at a solution.
